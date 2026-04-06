@@ -12,7 +12,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "DevPortfolio | Junior Full Stack Developer",
+  title: "abubakkar-portfolio | Junior Full Stack Developer",
   description: "Modern, professional personal portfolio for recruiters and collaborators.",
 };
 
