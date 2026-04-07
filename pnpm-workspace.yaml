@@ -1,3 +1,8 @@
 ignoredBuiltDependencies:
   - sharp
   - unrs-resolver
+
+# Define workspace packages to satisfy pnpm v7+ checks.
+# Keep '.' so this folder is treated as a workspace package.
+packages:
+  - "."
