@@ -12,19 +12,33 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "abubakkar-portfolio | Junior Full Stack Developer",
+  metadataBase: new URL("https://abubakkar-portfolio-xi.vercel.app"),
+  title: "Abu Bakkar Siddique | Full Stack Developer",
   description:
-    "Modern, professional personal portfolio for recruiters and collaborators.",
+    "Expert Full Stack Developer specializing in TypeScript, React, Next.js, and Node.js. Building scalable, high-performance web applications.",
+  keywords: ["Full Stack Developer", "TypeScript", "React", "Next.js", "Node.js", "Software Engineer", "Portfolio"],
+  authors: [{ name: "Abu Bakkar Siddique" }],
   openGraph: {
-    title: "Abu Bakkar Siddique | Junior Full Stack Developer",
-    description: "Modern, professional personal portfolio for recruiters and collaborators.",
+    title: "Abu Bakkar Siddique | Full Stack Developer",
+    description: "Expert Full Stack Developer building scalable, high-performance web applications.",
+    url: "https://abubakkar-portfolio-xi.vercel.app",
     siteName: "Abu Bakkar Portfolio",
+    images: [
+      {
+        url: "/banner.png",
+        width: 1200,
+        height: 630,
+        alt: "Abu Bakkar Siddique | Full Stack Developer",
+      },
+    ],
+    locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Abu Bakkar Siddique | Junior Full Stack Developer",
-    description: "Modern, professional personal portfolio for recruiters and collaborators.",
+    title: "Abu Bakkar Siddique | Full Stack Developer",
+    description: "Expert Full Stack Developer building scalable, high-performance web applications.",
+    images: ["/banner.png"],
   },
   icons: {
     icon: "/favicon.svg",
