@@ -1,8 +1,6 @@
-"use client";
-
-import { Button } from "@/components/ui/button";
 import { Send, Phone, Mail, MapPin, ExternalLink } from "lucide-react";
 import Link from "next/link";
+import { ContactUsForm } from "@/components/forms/ContactUsForm";
 
 export function ContactForm() {
   return (
@@ -50,7 +48,7 @@ export function ContactForm() {
                   </p>
                   <a
                     href="mailto:abubakkar.cce25.iiuc@gmail.com"
-                    className="text-sm font-semibold mt-0.5 hover:text-sky-500 transition-colors block"
+                    className="text-sm font-semibold mt-0.5 hover:text-sky-500 transition-colors block break-all"
                   >
                     abubakkar.cce25.iiuc@gmail.com
                   </a>
@@ -71,18 +69,18 @@ export function ContactForm() {
                 </div>
               </div>
 
-              <div className="flex items-center gap-3 pt-2">
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2">
                 <Link
                   href="https://github.com/AbuBakkarSiddique007"
                   target="_blank"
-                  className="flex items-center gap-2 px-4 py-2 rounded-xl bg-[#1a1a1a] border border-border/40 hover:border-sky-500/40 hover:text-sky-500 transition-colors text-sm font-medium"
+                  className="flex justify-center items-center gap-2 px-4 py-2 rounded-xl bg-[#1a1a1a] border border-border/40 hover:border-sky-500/40 hover:text-sky-500 transition-colors text-sm font-medium w-full sm:w-auto"
                 >
                   <ExternalLink className="w-4 h-4" /> GitHub
                 </Link>
                 <Link
                   href="https://www.linkedin.com/in/abubakkar-dev"
                   target="_blank"
-                  className="flex items-center gap-2 px-4 py-2 rounded-xl bg-[#1a1a1a] border border-border/40 hover:border-sky-500/40 hover:text-sky-500 transition-colors text-sm font-medium"
+                  className="flex justify-center items-center gap-2 px-4 py-2 rounded-xl bg-[#1a1a1a] border border-border/40 hover:border-sky-500/40 hover:text-sky-500 transition-colors text-sm font-medium w-full sm:w-auto"
                 >
                   <svg
                     className="w-4 h-4"
@@ -97,98 +95,7 @@ export function ContactForm() {
             </div>
           </div>
 
-          <form
-            className="space-y-5"
-            onSubmit={(e) => {
-              e.preventDefault();
-              const form = e.currentTarget as HTMLFormElement;
-              const formData = new FormData(form);
-              const data = Object.fromEntries(formData.entries());
-
-              // Log submitted info and clear the form
-
-              console.log("Contact form submitted:", data);
-
-              form.reset();
-            }}
-          >
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-              <div className="space-y-1.5">
-                <label
-                  htmlFor="name"
-                  className="text-xs font-medium text-muted-foreground ml-1"
-                >
-                  First Name
-                </label>
-                <input
-                  id="name"
-                  name="firstName"
-                  type="text"
-                  required
-                  className="w-full h-12 px-4 rounded-xl bg-[#1a1a1a] border border-border/40 focus:border-sky-500 focus:ring-1 focus:ring-sky-500 outline-none transition-all text-sm"
-                  placeholder="Enter your first name"
-                />
-              </div>
-              <div className="space-y-1.5">
-                <label
-                  htmlFor="lastname"
-                  className="text-xs font-medium text-muted-foreground ml-1"
-                >
-                  Last Name
-                </label>
-                <input
-                  id="lastname"
-                  name="lastName"
-                  type="text"
-                  required
-                  className="w-full h-12 px-4 rounded-xl bg-[#1a1a1a] border border-border/40 focus:border-sky-500 focus:ring-1 focus:ring-sky-500 outline-none transition-all text-sm"
-                  placeholder="Enter your last name"
-                />
-              </div>
-            </div>
-
-            <div className="space-y-1.5">
-              <label
-                htmlFor="email"
-                className="text-xs font-medium text-muted-foreground ml-1"
-              >
-                Email Address
-              </label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                required
-                className="w-full h-12 px-4 rounded-xl bg-[#1a1a1a] border border-border/40 focus:border-sky-500 focus:ring-1 focus:ring-sky-500 outline-none transition-all text-sm"
-                placeholder="Enter your email address"
-                suppressHydrationWarning
-              />
-            </div>
-
-            <div className="space-y-1.5">
-              <label
-                htmlFor="message"
-                className="text-xs font-medium text-muted-foreground ml-1"
-              >
-                Message
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                rows={4}
-                required
-                className="w-full p-4 rounded-xl bg-[#1a1a1a] border border-border/40 focus:border-sky-500 focus:ring-1 focus:ring-sky-500 outline-none transition-all resize-none text-sm"
-                placeholder="Enter a brief message describing your project or question"
-              />
-            </div>
-
-            <Button
-              type="submit"
-              className="w-full h-12 bg-sky-500 text-black hover:bg-sky-600 rounded-xl font-semibold mt-2"
-            >
-              Send Message
-            </Button>
-          </form>
+          <ContactUsForm />
         </div>
       </div>
     </section>

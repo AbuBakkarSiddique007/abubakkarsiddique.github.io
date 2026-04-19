@@ -47,7 +47,7 @@ export function Education() {
                     {edu.institution}
                   </a>
                   <div className="text-sm text-muted-foreground mt-1">
-                    CGPA: 3.4
+                    CGPA: 3.416
                   </div>
                 </div>
                 <div className="inline-flex shrink-0 px-3 py-1 rounded-full text-xs font-semibold bg-[#1a1a1a] border border-border/40 mt-1 sm:mt-0">

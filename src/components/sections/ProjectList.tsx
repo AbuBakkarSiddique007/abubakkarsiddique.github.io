@@ -9,7 +9,7 @@ export function ProjectList() {
       subtitle: "Next.js • Express • PostgreSQL • Prisma • Stripe",
       description:
         "A community-driven marketplace to discover and upvote developer tools, with role-based dashboards, Stripe subscriptions, and JWT authentication.",
-      image: "https://i.ibb.co.com/9HCzD2PC/frontend.jpg",
+      image: "/projectOne.png",
       links: [
         { label: "Live", href: "https://devhuntrclient.vercel.app" },
         {
@@ -27,7 +27,7 @@ export function ProjectList() {
       subtitle: "Next.js • Node.js • PostgreSQL • Prisma • JWT",
       description:
         "A full-stack food ordering platform where customers can browse meals, place orders, and track delivery, while providers manage menus and orders and admins oversee the entire system with role-based dashboards.",
-      image: "https://i.ibb.co.com/sppVmrp7/provider.png",
+      image: "/projectTwo.png",
       links: [
         { label: "Live", href: "https://bhojonbox-client.vercel.app/" },
         {
@@ -45,7 +45,7 @@ export function ProjectList() {
       subtitle: "React • Node.js • Express • MongoDB • Firebase • JWT",
       description:
         "A full-stack volunteer platform that connects users with community service opportunities. Features include authentication, volunteer post management, request handling, and secure role-based access with a responsive UI.",
-      image: "https://i.ibb.co.com/7tMHTTgY/slideTwo.jpg",
+      image: "/projectThree.png",
       links: [
         { label: "Live", href: "https://sharestep-d09c3.web.app" },
         {

@@ -5,21 +5,20 @@ export function SkillsGrid() {
     {
       title: "Languages",
       icon: <Code2 className="w-5 h-5 text-sky-500" />,
-      skills: ["JavaScript (ES6+)", "C", "Java"],
+      skills: ["JavaScript (ES6+)", "TypeScript", "C"],
     },
     {
       title: "Frontend",
       icon: <Monitor className="w-5 h-5 text-sky-500" />,
       skills: [
-        "TypeScript",
         "React",
         "Next.js",
         "Tailwind CSS",
         "Bootstrap",
+        "shadcn/ui",
         "TanStack Query",
         "Axios",
-        "Firebase Auth",
-        "JWT",
+        "GSAP",
       ],
     },
     {
@@ -28,13 +27,13 @@ export function SkillsGrid() {
       skills: [
         "Node.js",
         "Express.js",
-        "MongoDB",
+        "REST APIs",
         "PostgreSQL",
-        "MySQL",
+        "MongoDB",
         "Prisma",
-        "Mongoose",
         "Zod",
-        "Better Auth",
+        "JWT Auth",
+        "Better-Auth",
       ],
     },
     {
@@ -43,11 +42,10 @@ export function SkillsGrid() {
       skills: [
         "Git",
         "GitHub",
+        "Stripe API",
         "Vercel",
-        "Netlify",
+        "Render",
         "Postman",
-        "VS Code",
-        "Draw.io",
       ],
     },
     {
