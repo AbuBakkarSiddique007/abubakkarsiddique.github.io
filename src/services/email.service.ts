@@ -8,6 +8,10 @@ export type ContactEmailPayload = {
 };
 
 export async function sendContactFormEmail(payload: ContactEmailPayload) {
+  if (!resend) {
+    throw new Error('Email service is not configured. Please add RESEND_API_KEY environment variable.');
+  }
+
   const { firstName, lastName, email, message } = payload;
 
   const { data, error } = await resend.emails.send({

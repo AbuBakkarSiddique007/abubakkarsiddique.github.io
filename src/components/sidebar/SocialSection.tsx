@@ -24,6 +24,16 @@ export function SocialSection() {
         <span className="sr-only">LinkedIn</span>
       </Link>
       <Link
+        href="https://wa.me/8801719690669"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center justify-center w-10 h-10 rounded-[12px] bg-[#1a1a1a] border border-border/40 hover:bg-[#25D366] hover:text-black hover:border-[#25D366] transition-all"
+        title="WhatsApp Quick Message"
+      >
+        <Icons.whatsapp className="w-4 h-4" />
+        <span className="sr-only">WhatsApp</span>
+      </Link>
+      <Link
         href="mailto:abubakkar.cce25.iiuc@gmail.com"
         className="flex items-center justify-center w-10 h-10 rounded-[12px] bg-[#1a1a1a] border border-border/40 hover:bg-sky-500 hover:text-black hover:border-sky-500 transition-all"
       >

@@ -14,22 +14,16 @@ export function ProfileCard() {
         transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}
         className="w-full"
       >
-        <Link
-          href="https://www.linkedin.com/in/abubakkar-dev"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="w-full"
-        >
-          <div className="w-full aspect-square rounded-[24px] overflow-hidden mb-4 bg-secondary shadow-inner relative">
-            <Image
-              src="/abubakkar.png"
-              alt="Abu Bakkar Siddique"
-              fill
-              className="object-cover object-top"
-              sizes="(max-width: 1024px) 100vw, 320px"
-            />
-          </div>
-        </Link>
+        <div className="w-full aspect-square rounded-[24px] overflow-hidden mb-4 bg-secondary shadow-inner relative group border border-border/40 hover:border-sky-500/30 transition-all duration-300">
+          <Image
+            src="/abubakkar.png"
+            alt="Abu Bakkar Siddique"
+            fill
+            priority
+            className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
+            sizes="(max-width: 1024px) 100vw, 320px"
+          />
+        </div>
       </motion.div>
 
       <motion.div
@@ -46,16 +40,9 @@ export function ProfileCard() {
         transition={{ duration: 0.5, delay: 0.35, ease: [0.25, 0.1, 0.25, 1] }}
         className="mt-3 space-y-1"
       >
-        <Link
-          href="https://www.linkedin.com/in/abubakkar-dev"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block"
-        >
-          <h1 className="text-2xl font-bold tracking-tight">
-            Abu Bakkar Siddique
-          </h1>
-        </Link>
+        <h1 className="text-2xl font-bold tracking-tight">
+          Abu Bakkar Siddique
+        </h1>
         <p className="text-muted-foreground font-medium text-sm">
           Full Stack Developer
         </p>

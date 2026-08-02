@@ -45,7 +45,7 @@ export function Hero() {
             {" "}
             TypeScript, React, Next.js, Node.js, Prisma, MongoDB, and PostgreSQL
           </span>
-          . Based in Chattogram — open to Full Stack Developer
+          . Based in Chattogram | open to Full Stack Developer
           opportunities.
         </motion.p>
       </div>

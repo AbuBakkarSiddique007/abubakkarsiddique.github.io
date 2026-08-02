@@ -1,5 +1,6 @@
-import { Send, Phone, Mail, MapPin, ExternalLink } from "lucide-react";
+import { Send, Phone, Mail, MapPin, ExternalLink, ArrowUpRight } from "lucide-react";
 import Link from "next/link";
+import { Icons } from "@/components/ui/icons";
 import { ContactUsForm } from "@/components/forms/ContactUsForm";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 
@@ -73,26 +74,48 @@ export function ContactForm() {
                   </div>
                 </div>
 
-                <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2">
+                <Link
+                  href="https://wa.me/8801719690669"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex items-center justify-between p-4 sm:p-5 rounded-2xl bg-gradient-to-br from-[#25D366]/10 via-[#128C7E]/5 to-transparent border border-[#25D366]/30 hover:border-[#25D366] transition-all duration-300 shadow-sm hover:shadow-[#25D366]/10"
+                >
+                  <div className="flex items-center gap-3.5">
+                    <div className="w-11 h-11 flex items-center justify-center rounded-xl bg-[#25D366] text-black shadow-md group-hover:scale-110 transition-transform duration-300">
+                      <Icons.whatsapp className="w-5 h-5" />
+                    </div>
+                    <div>
+                      <div className="flex items-center gap-2">
+                        <h4 className="text-sm font-bold text-foreground group-hover:text-[#25D366] transition-colors">
+                          Quick WhatsApp Chat
+                        </h4>
+                        <span className="relative flex h-2 w-2">
+                          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#25D366] opacity-75"></span>
+                          <span className="relative inline-flex rounded-full h-2 w-2 bg-[#25D366]"></span>
+                        </span>
+                      </div>
+                      <p className="text-xs text-muted-foreground mt-0.5">
+                        Direct messaging for inquiries (+880 1719690669)
+                      </p>
+                    </div>
+                  </div>
+                  <ArrowUpRight className="w-4 h-4 text-[#25D366] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                </Link>
+
+                <div className="flex flex-wrap items-center gap-3 pt-2">
                   <Link
                     href="https://github.com/AbuBakkarSiddique007"
                     target="_blank"
-                    className="flex justify-center items-center gap-2 px-4 py-2 rounded-xl bg-secondary border border-border/40 hover:border-primary/40 hover:text-primary transition-colors text-sm font-medium w-full sm:w-auto"
+                    className="flex justify-center items-center gap-2 px-4 py-2 rounded-xl bg-secondary border border-border/40 hover:border-primary/40 hover:text-primary transition-colors text-sm font-medium"
                   >
                     <ExternalLink className="w-4 h-4" /> GitHub
                   </Link>
                   <Link
                     href="https://www.linkedin.com/in/abubakkar-dev"
                     target="_blank"
-                    className="flex justify-center items-center gap-2 px-4 py-2 rounded-xl bg-secondary border border-border/40 hover:border-primary/40 hover:text-primary transition-colors text-sm font-medium w-full sm:w-auto"
+                    className="flex justify-center items-center gap-2 px-4 py-2 rounded-xl bg-secondary border border-border/40 hover:border-primary/40 hover:text-primary transition-colors text-sm font-medium"
                   >
-                    <svg
-                      className="w-4 h-4"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                    </svg>
+                    <Icons.linkedin className="w-4 h-4" />
                     LinkedIn
                   </Link>
                 </div>

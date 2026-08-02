@@ -59,6 +59,24 @@ export function ProjectList() {
         },
       ],
     },
+    {
+      title: "Sure-Drop",
+      subtitle: "React • Node.js • Express • MongoDB • Firebase • Stripe",
+      description:
+        "A full-stack parcel delivery and logistics platform featuring Firebase authentication, role-based dashboards for users, riders, and admins, parcel tracking, rider assignment, delivery status updates, and Stripe payment integration.",
+      image: "/projectFour.png",
+      links: [
+        { label: "Live", href: "https://sure-drop.web.app" },
+        {
+          label: "Client",
+          href: "https://github.com/AbuBakkarSiddique007/sure-drop-client",
+        },
+        {
+          label: "Server",
+          href: "https://github.com/AbuBakkarSiddique007/sure-drop-server",
+        },
+      ],
+    },
   ];
 
   return (
@@ -81,7 +99,7 @@ export function ProjectList() {
                   src={project.image}
                   alt={project.title}
                   fill
-                  unoptimized
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>

@@ -31,6 +31,7 @@ export function SkillsGrid() {
         "REST APIs",
         "PostgreSQL",
         "MongoDB",
+        "Mongoose",
         "Prisma",
         "Zod",
         "JWT Auth",
