@@ -13,10 +13,10 @@ type ScrollRevealProps = {
 };
 
 const directionOffset = {
-  up: { x: 0, y: 40 },
-  down: { x: 0, y: -40 },
-  left: { x: 40, y: 0 },
-  right: { x: -40, y: 0 },
+  up: { x: 0, y: 15 },
+  down: { x: 0, y: -15 },
+  left: { x: 15, y: 0 },
+  right: { x: -15, y: 0 },
 };
 
 export function ScrollReveal({
@@ -24,7 +24,7 @@ export function ScrollReveal({
   className,
   delay = 0,
   direction = "up",
-  duration = 0.6,
+  duration = 0.35,
   once = true,
 }: ScrollRevealProps) {
   const offset = directionOffset[direction];
@@ -33,7 +33,7 @@ export function ScrollReveal({
     <motion.div
       initial={{ opacity: 0, x: offset.x, y: offset.y }}
       whileInView={{ opacity: 1, x: 0, y: 0 }}
-      viewport={{ once, margin: "-80px" }}
+      viewport={{ once, margin: "-20px" }}
       transition={{
         duration,
         delay,
@@ -56,14 +56,14 @@ type StaggerContainerProps = {
 export function StaggerContainer({
   children,
   className,
-  staggerDelay = 0.1,
+  staggerDelay = 0.05,
   delay = 0,
 }: StaggerContainerProps) {
   return (
     <motion.div
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, margin: "-80px" }}
+      viewport={{ once: true, margin: "-20px" }}
       variants={{
         hidden: {},
         visible: {
@@ -90,12 +90,12 @@ export function StaggerItem({
   return (
     <motion.div
       variants={{
-        hidden: { opacity: 0, y: 30 },
+        hidden: { opacity: 0, y: 15 },
         visible: {
           opacity: 1,
           y: 0,
           transition: {
-            duration: 0.5,
+            duration: 0.3,
             ease: [0.25, 0.1, 0.25, 1],
           },
         },
