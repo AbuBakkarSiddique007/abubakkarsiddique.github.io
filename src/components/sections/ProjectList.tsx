@@ -1,7 +1,11 @@
 import { ExternalLink, Briefcase } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-import { ScrollReveal, StaggerContainer, StaggerItem } from "@/components/ui/ScrollReveal";
+import {
+  ScrollReveal,
+  StaggerContainer,
+  StaggerItem,
+} from "@/components/ui/ScrollReveal";
 
 export function ProjectList() {
   const projects = [
@@ -66,7 +70,7 @@ export function ProjectList() {
         "A full-stack parcel delivery and logistics platform featuring Firebase authentication, role-based dashboards for users, riders, and admins, parcel tracking, rider assignment, delivery status updates, and Stripe payment integration.",
       image: "/projectFour.png",
       links: [
-        { label: "Live", href: "https://sure-drop.web.app" },
+        { label: "Live", href: "https://sure-drop-client.web.app/" },
         {
           label: "Client",
           href: "https://github.com/AbuBakkarSiddique007/sure-drop-client",
@@ -88,12 +92,13 @@ export function ProjectList() {
         </div>
       </ScrollReveal>
 
-      <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 gap-6" staggerDelay={0.15}>
+      <StaggerContainer
+        className="grid grid-cols-1 md:grid-cols-2 gap-6"
+        staggerDelay={0.15}
+      >
         {projects.map((project, i) => (
           <StaggerItem key={i}>
-            <div
-              className="group flex flex-col bg-card border border-border/40 rounded-[24px] overflow-hidden hover:border-primary/30 transition-all h-full"
-            >
+            <div className="group flex flex-col bg-card border border-border/40 rounded-[24px] overflow-hidden hover:border-primary/30 transition-all h-full">
               <div className="w-full aspect-video bg-secondary overflow-hidden border-b border-border/20 relative">
                 <Image
                   src={project.image}
