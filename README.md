@@ -54,6 +54,15 @@ pnpm run dev
 
 Open [http://localhost:3000](http://localhost:3000) to view the application in your browser.
 
+## Deploying to Netlify
+
+1. Push this project to GitHub, GitLab, or Bitbucket.
+2. In Netlify, select **Add new project** > **Import an existing project** and choose the repository.
+3. If the repository contains this app in a subdirectory, set **Base directory** to `client`. If `client` is the repository root, leave it blank.
+4. Netlify will use the included `netlify.toml`; the build command is `pnpm build`.
+5. In **Project configuration** > **Environment variables**, add `RESEND_API_KEY` with the same value used on Vercel.
+6. Deploy the project. Netlify will detect Next.js and configure the server-rendered pages and API route automatically.
+
 ---
 
 *Designed and Built by Abu Bakkar Siddique.*

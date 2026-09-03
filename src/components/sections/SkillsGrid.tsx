@@ -35,6 +35,7 @@ export function SkillsGrid() {
         "Prisma",
         "Zod",
         "JWT Auth",
+        "NextAuth.js",
         "Better-Auth",
       ],
     },
