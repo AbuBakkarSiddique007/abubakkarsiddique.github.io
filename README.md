@@ -1,6 +1,8 @@
 # Abu Bakkar Siddique | Developer Portfolio
 
-[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Visit_Now-0284c7?style=for-the-badge&labelColor=0f172a)](https://abubakkar-portfolio-xi.vercel.app)
+[Live Demo - Netlify](https://abubakkar-portfolio-xi.netlify.app/)
+
+[Live Demo - Vercel](https://abubakkar-portfolio-xi.vercel.app/)
 
 A highly modular, performance-optimized, and fully responsive personal developer portfolio built with the modern React ecosystem. Setup with a Mobile-First layout methodology, the application elegantly showcases professional experience, technical stacks, and full-stack projects.
 
