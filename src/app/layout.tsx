@@ -83,6 +83,9 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.svg",
   },
+  verification: {
+    google: "BTNDPCDpVxgAlh8twwSX2EeN29CuhHMymzq-XFawIyw",
+  },
   category: "technology",
 };
 
