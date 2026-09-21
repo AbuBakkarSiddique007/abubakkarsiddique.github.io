@@ -32,8 +32,8 @@ I strongly believe in writing clean, scalable, and **highly modular code**. This
 - **Mobile-First Responsive Architecture**: Engineered for flawless resolution scaling from small mobile devices to 4K ultra-wide monitors, using a fluid layout methodology.
 - **Secure Server-Side Contact Engine**: Implemented via Next.js API routes and the Resend SDK, ensuring that API keys and email logic remain strictly encapsulated on the server for security and performance.
 - **Dynamic Asset Optimization**: Utilizes Next.js `Image` component with custom caching strategies for high-performance visual delivery.
-- **Polished UI/UX**: Features global GSAP scroll-reveal animations, custom-themed Radix/Shadcn primitives, and a tailored "Obsidian" aesthetic with subtle noise textures for depth.
-- **Professional SEO & Metadata**: Fully configured JSON-LD and social graph metadata (OpenGraph, Twitter) for consistent professional branding when shared across platforms.
+- **Polished UI/UX**: Features Framer Motion scroll-reveal animations, custom-themed Base UI/Shadcn primitives, and a tailored "Obsidian" aesthetic with subtle noise textures for depth.
+- **Professional SEO & Metadata**: Fully configured JSON-LD structured data, OpenGraph/Twitter social graph, sitemap.xml, robots.txt, and Google Search Console verification for consistent professional branding and search indexing.
 
 ## 💻 Running Locally
 
@@ -41,7 +41,7 @@ To clone and run this portfolio locally:
 
 ```bash
 # Clone the repository
-git clone https://github.com/AbuBakkarSiddique007/abubakkar-portfolio.git
+git clone https://github.com/AbuBakkarSiddique007/abubakkarsiddique.github.io.git
 
 # Install dependencies
 pnpm install
