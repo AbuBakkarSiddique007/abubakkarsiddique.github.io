@@ -15,7 +15,7 @@ export function About() {
       </ScrollReveal>
 
       <ScrollReveal delay={0.15}>
-        <div className="prose prose-zinc dark:prose-invert max-w-none text-muted-foreground text-lg leading-relaxed space-y-6">
+        <div className="prose prose-zinc dark:prose-invert max-w-none text-muted-foreground text-lg leading-relaxed text-left sm:text-justify hyphens-auto space-y-6">
           <p>
             I recently graduated in Computer and Communication Engineering from
             International Islamic University Chittagong and focus on building

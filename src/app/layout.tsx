@@ -12,18 +12,57 @@ const spaceGrotesk = Space_Grotesk({
   display: "swap",
 });
 
+const BASE_URL = "https://abubakkar-portfolio-xi.vercel.app";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://abubakkar-portfolio-xi.vercel.app"),
-  title: "Abu Bakkar Siddique | Full Stack Developer",
+  metadataBase: new URL(BASE_URL),
+  title: {
+    default: "Abu Bakkar Siddique | Full Stack Developer",
+    template: "%s | Abu Bakkar Siddique",
+  },
   description:
-    "Expert Full Stack Developer specializing in TypeScript, React, Next.js, and Node.js. Building scalable, high-performance web applications.",
-  keywords: ["Full Stack Developer", "TypeScript", "React", "Next.js", "Node.js", "Software Engineer", "Portfolio"],
+    "Full Stack Developer specializing in TypeScript, React, Next.js, Node.js, Prisma, MongoDB, and PostgreSQL. Building scalable, high-performance web applications.",
+  keywords: [
+    "Abu Bakkar Siddique",
+    "Full Stack Developer",
+    "Frontend Developer",
+    "Backend Developer",
+    "TypeScript",
+    "React",
+    "Next.js",
+    "Node.js",
+    "PostgreSQL",
+    "MongoDB",
+    "Prisma",
+    "Software Engineer",
+    "Portfolio",
+    "Bangladesh",
+  ],
   authors: [{ name: "Abu Bakkar Siddique" }],
+  creator: "Abu Bakkar Siddique",
+  publisher: "Abu Bakkar Siddique",
+  applicationName: "Abu Bakkar Portfolio",
+  alternates: {
+    canonical: "/",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
   openGraph: {
-    title: "Abu Bakkar Siddique | Full Stack Developer",
-    description: "Expert Full Stack Developer building scalable, high-performance web applications.",
-    url: "https://abubakkar-portfolio-xi.vercel.app",
+    type: "website",
+    url: BASE_URL,
     siteName: "Abu Bakkar Portfolio",
+    title: "Abu Bakkar Siddique | Full Stack Developer",
+    description:
+      "Full Stack Developer building scalable, high-performance web applications with TypeScript, React, Next.js, and Node.js. Open to new opportunities.",
     images: [
       {
         url: "/banner.png",
@@ -33,17 +72,41 @@ export const metadata: Metadata = {
       },
     ],
     locale: "en_US",
-    type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Abu Bakkar Siddique | Full Stack Developer",
-    description: "Expert Full Stack Developer building scalable, high-performance web applications.",
+    description:
+      "Full Stack Developer building scalable, high-performance web applications with TypeScript, React, Next.js, and Node.js.",
     images: ["/banner.png"],
   },
   icons: {
     icon: "/favicon.svg",
   },
+  category: "technology",
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Abu Bakkar Siddique",
+  url: BASE_URL,
+  image: `${BASE_URL}/abubakkar.webp`,
+  jobTitle: "Full Stack Developer",
+  sameAs: [
+    "https://github.com/AbuBakkarSiddique007",
+    "https://www.linkedin.com/in/abubakkar-dev",
+  ],
+  knowsAbout: [
+    "TypeScript",
+    "React",
+    "Next.js",
+    "Node.js",
+    "Express.js",
+    "Prisma",
+    "PostgreSQL",
+    "MongoDB",
+  ],
 };
 
 import { Sidebar } from "@/components/sidebar";
@@ -63,6 +126,10 @@ export default function RootLayout({
       <body
         className={`${spaceGrotesk.variable} font-sans antialiased bg-[#050505] text-foreground`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <div className="max-w-[1200px] mx-auto min-h-screen flex flex-col lg:flex-row gap-8 lg:gap-12 px-4 sm:px-8 lg:px-12">
           <Sidebar />
           <main className="flex-1 w-full min-w-0 py-4 lg:py-12 flex flex-col">

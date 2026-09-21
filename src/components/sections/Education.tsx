@@ -7,14 +7,14 @@ export function Education() {
     {
       degree: "B.Sc. in Computer and Communication Engineering",
       institution: "International Islamic University Chittagong",
-      period: "Graduated 2025",
+      period: "Graduated 2026",
       description:
         "Graduated with a focus on core software engineering and communication principles, including programming, data structures, and network systems. Actively developed full-stack web applications and participated in technical projects.",
     },
   ];
 
   return (
-    <section className="space-y-6 mt-16">
+    <section id="education" className="space-y-6 mt-16">
       <ScrollReveal>
         <div className="flex items-center gap-3 text-2xl font-semibold tracking-tight pb-2">
           <GraduationCap className="w-6 h-6 text-sky-500" />
@@ -55,7 +55,7 @@ export function Education() {
                     {edu.period}
                   </div>
                 </div>
-                <p className="text-muted-foreground leading-relaxed text-sm">
+                <p className="text-muted-foreground leading-relaxed text-sm text-left sm:text-justify hyphens-auto">
                   {edu.description}
                 </p>
               </div>

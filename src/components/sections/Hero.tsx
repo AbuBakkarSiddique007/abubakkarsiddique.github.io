@@ -34,7 +34,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.35, delay: 0.05, ease: [0.25, 0.1, 0.25, 1] }}
-          className="text-base lg:text-lg text-muted-foreground leading-relaxed"
+          className="text-base lg:text-lg text-muted-foreground leading-relaxed text-left sm:text-justify hyphens-auto"
         >
           I build{" "}
           <span className="font-semibold text-sky-500">

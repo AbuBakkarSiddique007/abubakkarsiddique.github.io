@@ -6,6 +6,10 @@ import {
   StaggerContainer,
   StaggerItem,
 } from "@/components/ui/ScrollReveal";
+import devhuntr from "../../../public/devhuntr.webp";
+import tradeslot from "../../../public/tradeslot.webp";
+import suredrop from "../../../public/suredrop.webp";
+import bhojonbox from "../../../public/bhojonbox.webp";
 
 export function ProjectList() {
   const projects = [
@@ -14,7 +18,7 @@ export function ProjectList() {
       subtitle: "Next.js • Express • PostgreSQL • Prisma • Stripe",
       description:
         "A community-driven marketplace to discover and upvote developer tools, with role-based dashboards, Stripe subscriptions, and JWT authentication.",
-      image: "/projectOne.png",
+      image: devhuntr,
       links: [
         { label: "Live", href: "https://devhuntrclient.vercel.app" },
         {
@@ -27,39 +31,25 @@ export function ProjectList() {
         },
       ],
     },
+
     {
-      title: "BhojonBox",
-      subtitle: "Next.js • Node.js • PostgreSQL • Prisma • JWT",
+      title: "TradeSlot",
+      subtitle: "Next.js • Express • PostgreSQL • Prisma • Stripe Connect",
       description:
-        "A full-stack food ordering platform where customers can browse meals, place orders, and track delivery, while providers manage menus and orders and admins oversee the entire system with role-based dashboards.",
-      image: "/projectTwo.png",
+        "A trade booking platform with web chatbot intake, location-based scheduling, automatic 30-minute travel buffers, lead capture, and Stripe Connect payments.",
+      image: tradeslot,
       links: [
-        { label: "Live", href: "https://bhojonbox-client.vercel.app/" },
+        {
+          label: "Live",
+          href: "https://trade-slot-theta.vercel.app",
+        },
         {
           label: "Client",
-          href: "https://github.com/AbuBakkarSiddique007/bhojonbox_client",
+          href: "https://github.com/AbuBakkarSiddique007/TradeSlot_Client",
         },
         {
           label: "Server",
-          href: "https://github.com/AbuBakkarSiddique007/bhojonbox_server",
-        },
-      ],
-    },
-    {
-      title: "ShareStep",
-      subtitle: "React • Node.js • Express • MongoDB • Firebase • JWT",
-      description:
-        "A full-stack volunteer platform that connects users with community service opportunities. Features include authentication, volunteer post management, request handling, and secure role-based access with a responsive UI.",
-      image: "/projectThree.png",
-      links: [
-        { label: "Live", href: "https://sharestep-d09c3.web.app" },
-        {
-          label: "Client",
-          href: "https://github.com/AbuBakkarSiddique007/ShareStep-Client",
-        },
-        {
-          label: "Server",
-          href: "https://github.com/AbuBakkarSiddique007/ShareStep-Server",
+          href: "https://github.com/AbuBakkarSiddique007/TradeSlot_Server",
         },
       ],
     },
@@ -68,7 +58,7 @@ export function ProjectList() {
       subtitle: "React • Node.js • Express • MongoDB • Firebase • Stripe",
       description:
         "A full-stack parcel delivery and logistics platform featuring Firebase authentication, role-based dashboards for users, riders, and admins, parcel tracking, rider assignment, delivery status updates, and Stripe payment integration.",
-      image: "/projectFour.png",
+      image: suredrop,
       links: [
         { label: "Live", href: "https://sure-drop-client.web.app/" },
         {
@@ -81,10 +71,28 @@ export function ProjectList() {
         },
       ],
     },
+    {
+      title: "BhojonBox",
+      subtitle: "Next.js • Node.js • PostgreSQL • Prisma • JWT",
+      description:
+        "A full-stack food ordering platform where customers can browse meals, place orders, and track delivery, while providers manage menus and orders and admins oversee the entire system with role-based dashboards.",
+      image: bhojonbox,
+      links: [
+        { label: "Live", href: "https://bhojonbox-client.vercel.app/" },
+        {
+          label: "Client",
+          href: "https://github.com/AbuBakkarSiddique007/bhojonbox_client",
+        },
+        {
+          label: "Server",
+          href: "https://github.com/AbuBakkarSiddique007/bhojonbox_server",
+        },
+      ],
+    },
   ];
 
   return (
-    <section className="space-y-6 mt-16">
+    <section id="projects" className="space-y-6 mt-16">
       <ScrollReveal>
         <div className="flex items-center gap-3 text-2xl font-semibold tracking-tight pb-2">
           <Briefcase className="w-6 h-6 text-primary" />
@@ -105,6 +113,7 @@ export function ProjectList() {
                   alt={project.title}
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
+                  placeholder="blur"
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
@@ -115,7 +124,7 @@ export function ProjectList() {
                     {project.subtitle}
                   </p>
                 </div>
-                <p className="text-sm text-muted-foreground leading-relaxed flex-1">
+                <p className="text-sm text-muted-foreground leading-relaxed flex-1 text-left sm:text-justify hyphens-auto">
                   {project.description}
                 </p>
                 <div className="flex flex-wrap items-center gap-2 pt-1">

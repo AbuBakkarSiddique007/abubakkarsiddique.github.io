@@ -18,7 +18,7 @@ export function SocialSection() {
         href="https://www.linkedin.com/in/abubakkar-dev"
         target="_blank"
         rel="noopener noreferrer"
-        className="flex items-center justify-center w-10 h-10 rounded-[12px] bg-[#1a1a1a] border border-border/40 hover:bg-sky-500 hover:text-black hover:border-sky-500 transition-all"
+        className="flex items-center justify-center w-10 h-10 rounded-[12px] bg-[#1a1a1a] border border-border/40 text-[#0A66C2] hover:bg-sky-500 hover:text-black hover:border-sky-500 transition-all"
       >
         <Icons.linkedin className="w-4 h-4" />
         <span className="sr-only">LinkedIn</span>
@@ -27,7 +27,7 @@ export function SocialSection() {
         href="https://wa.me/8801719690669"
         target="_blank"
         rel="noopener noreferrer"
-        className="flex items-center justify-center w-10 h-10 rounded-[12px] bg-[#1a1a1a] border border-border/40 hover:bg-[#25D366] hover:text-black hover:border-[#25D366] transition-all"
+        className="flex items-center justify-center w-10 h-10 rounded-[12px] bg-[#1a1a1a] border border-border/40 text-[#25D366] hover:bg-[#25D366] hover:text-black hover:border-[#25D366] transition-all"
         title="WhatsApp Quick Message"
       >
         <Icons.whatsapp className="w-4 h-4" />
@@ -35,7 +35,7 @@ export function SocialSection() {
       </Link>
       <Link
         href="mailto:abubakkar.cce25.iiuc@gmail.com"
-        className="flex items-center justify-center w-10 h-10 rounded-[12px] bg-[#1a1a1a] border border-border/40 hover:bg-sky-500 hover:text-black hover:border-sky-500 transition-all"
+        className="flex items-center justify-center w-10 h-10 rounded-[12px] bg-[#1a1a1a] border border-border/40 text-sky-500 hover:bg-sky-500 hover:text-black hover:border-sky-500 transition-all"
       >
         <Mail className="w-4 h-4" />
         <span className="sr-only">Email</span>

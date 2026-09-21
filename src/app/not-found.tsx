@@ -22,7 +22,7 @@ export default function NotFound() {
         Lost in the void.
       </h2>
 
-      <p className="text-muted-foreground text-lg max-w-md mx-auto mb-10 leading-relaxed">
+      <p className="text-muted-foreground text-lg max-w-md mx-auto mb-10 leading-relaxed text-left sm:text-justify hyphens-auto">
         We could not find the page you were looking for. It might have been deleted, moved, or never existed at all.
       </p>
 
@@ -33,7 +33,7 @@ export default function NotFound() {
             Back Home
           </Button>
         </Link>
-        <Link href="/projects" className="w-full">
+        <Link href="/#projects" className="w-full">
           <Button size="lg" variant="outline" className="rounded-full w-full h-12 border-white/20 glass hover:bg-white/10 hover:text-white">
             <Search className="mr-2 h-4 w-4" />
             Explore

@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { StatusBadge } from "./StatusBadge";
 import { motion } from "framer-motion";
+import abubakkar from "../../../public/abubakkar.webp";
 
 export function ProfileCard() {
   return (
@@ -16,10 +17,11 @@ export function ProfileCard() {
       >
         <div className="w-full aspect-square rounded-[24px] overflow-hidden mb-4 bg-secondary shadow-inner relative group border border-border/40 hover:border-sky-500/30 transition-all duration-300">
           <Image
-            src="/abubakkar.png"
+            src={abubakkar}
             alt="Abu Bakkar Siddique"
             fill
-            priority
+            preload
+            placeholder="blur"
             className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
             sizes="(max-width: 1024px) 100vw, 320px"
           />
@@ -40,9 +42,9 @@ export function ProfileCard() {
         transition={{ duration: 0.5, delay: 0.35, ease: [0.25, 0.1, 0.25, 1] }}
         className="mt-3 space-y-1"
       >
-        <h1 className="text-2xl font-bold tracking-tight">
+        <h2 className="text-2xl font-bold tracking-tight">
           Abu Bakkar Siddique
-        </h1>
+        </h2>
         <p className="text-muted-foreground font-medium text-sm">
           Full Stack Developer
         </p>

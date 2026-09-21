@@ -59,7 +59,7 @@ export function SkillsGrid() {
   ];
 
   return (
-    <section className="space-y-8 mt-16 pb-8">
+    <section id="skills" className="space-y-8 mt-16 pb-8">
       <ScrollReveal>
         <div className="flex items-center gap-3 text-2xl font-semibold tracking-tight pb-2 border-b border-border/40">
           <Layers className="w-6 h-6 text-sky-500" />

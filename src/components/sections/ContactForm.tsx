@@ -22,7 +22,7 @@ export function ContactForm() {
                 <h3 className="text-3xl font-bold tracking-tight mb-3">
                   Let&apos;s Get in Touch!
                 </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">
+                <p className="text-muted-foreground text-sm leading-relaxed text-left sm:text-justify hyphens-auto">
                   I&apos;m always open to discussing new projects, creative ideas,
                   or opportunities to be part of your visions.
                 </p>
