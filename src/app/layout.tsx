@@ -1,16 +1,9 @@
 import type { Metadata } from "next";
-import { Space_Grotesk, Geist } from "next/font/google";
+import "@fontsource/space-grotesk/400.css";
+import "@fontsource/space-grotesk/500.css";
+import "@fontsource/space-grotesk/600.css";
+import "@fontsource/space-grotesk/700.css";
 import "./globals.css";
-import { cn } from "@/lib/utils";
-
-const geist = Geist({ subsets: ["latin"], variable: "--font-sans", display: "swap" });
-
-const spaceGrotesk = Space_Grotesk({
-  subsets: ["latin"],
-  variable: "--font-space-grotesk",
-  weight: ["400", "500", "600", "700"],
-  display: "swap",
-});
 
 const BASE_URL = "https://abubakkar-portfolio-xi.vercel.app";
 
@@ -123,11 +116,11 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={cn("dark", "font-sans", geist.variable)}
+      className="dark font-sans"
       suppressHydrationWarning
     >
       <body
-        className={`${spaceGrotesk.variable} font-sans antialiased bg-[#050505] text-foreground`}
+        className={`font-sans antialiased bg-[#050505] text-foreground`}
       >
         <script
           type="application/ld+json"
